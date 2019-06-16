@@ -1,0 +1,15 @@
+dist: xenial
+language: node_js
+node_js:
+  - "12.4.0"
+cache:
+  directories:
+    - node_modules
+before_install:
+  - sh create_credentials_js.sh
+install:
+  - npm install
+script:
+  - npm run start &
+  - sleep 5
+  - npm run test
