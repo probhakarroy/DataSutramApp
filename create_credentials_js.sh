@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir lib;
 touch lib/credentials.js;
 cat > lib/credentials.js << EOL
 module.exports = {
