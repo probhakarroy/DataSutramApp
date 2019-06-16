@@ -54,11 +54,25 @@ Data Format For Path /user/signup :-
 }
 ```
 
+Output Data Format For Path /user/signup :-
+```sh
+{
+  id : 'User id',
+}
+```
+
 Data Format For Path /user/login :-
 ```sh
 {
   username: 'Username',
   password: 'Password',
+}
+```
+
+Output Data Format For Path /user/login :-
+```sh
+{
+  id : 'jWT token',
 }
 ```
 
